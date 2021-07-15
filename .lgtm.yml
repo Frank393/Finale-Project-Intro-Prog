@@ -1,9 +1,3 @@
-queries:
-- include: "*"
-- exclude: "cpp/class-many-fields"
-- exclude: "cpp/long-switch"
-- exclude: "cpp/trivial-switch"
-
   cpp:
     index:
       build_command:
