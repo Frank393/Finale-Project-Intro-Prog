@@ -1,13 +1,4 @@
 extraction:
   cpp:
-     prepare:
-        packages: 
-          - libboost-all-dev
-          - bison
-     configure:
-        command:
-        - ./bootstrap
-        - ./configure --with-modules="" --without-lua
-     index:
-        build_command:
-        - ./project-builder.sh
+    after_prepare:
+      - echo This is a custom command
