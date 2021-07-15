@@ -4,20 +4,8 @@ queries:
 - exclude: "cpp/long-switch"
 - exclude: "cpp/trivial-switch"
 
-path_classifiers:
-  generated:
-    - "**/Ui_*"
-
-extraction:
-  python:
-    python_setup:
-      version: "3"
-    index:
-      include: "tools/cFS-GroundSystem"
   cpp:
     index:
       build_command:
-      - "cp cfe/cmake/Makefile.sample Makefile"
-      - "cp -r cfe/cmake/sample_defs sample_defs"
-      - "make OMIT_DEPRECATED=true prep"
-      - "make"mmand
+      - "g++ -o MyCinema MyCinema.cpp"
+      - "./MyCinema"
